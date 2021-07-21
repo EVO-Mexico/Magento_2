@@ -6,7 +6,7 @@ use EVOMexico\Payment\Helper\sdk\lib\Response;
 
 class ResponseErrorErrors extends Response {
 
-<<<<<<< HEAD
+
     public function __construct($errors = array())
         {
             if (is_array($errors)) {
@@ -21,7 +21,7 @@ class ResponseErrorErrors extends Response {
                 $this->_data['errors'] = $errors;
             }
         }
-=======
+
     public function __construct($errors = array()) {
         if (is_array($errors)) {
             foreach ($errors as $error) {
@@ -31,6 +31,6 @@ class ResponseErrorErrors extends Response {
             $this->_data[$errors] = $errors;
         }
     }
->>>>>>> fa93dae066f6f222e73dc34e0fa02cd278f41954
+
 
 }
